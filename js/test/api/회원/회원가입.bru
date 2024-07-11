@@ -1,0 +1,27 @@
+meta {
+  name: 회원가입
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "h2sun@test.com",
+    "password": "11111111",
+    "name": "h2sun",
+    "phone": "01011112222",
+    "address": "서울시 강남구 역삼동 123",
+    "type": "user",
+    "profileImage":  {
+        "originalname": "IMG_6508.PNG",
+        "name": "hBskzKn_6.PNG",
+        "path": "/files/00-sample/hBskzKn_6.PNG"
+      }
+  }
+}

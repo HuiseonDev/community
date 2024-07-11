@@ -1,0 +1,21 @@
+meta {
+  name: 게시물 등록
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/posts/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "{{name}}",
+    "title": "지우기 위한 포스트.",
+    "content": "옹예.",
+    "image": "sample-bugatti.png",
+    "tag": "야야야"
+  }
+}

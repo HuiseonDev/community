@@ -1,0 +1,16 @@
+meta {
+  name: 게시물 목록 조회
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/posts?type=info&keyword=
+  body: none
+  auth: none
+}
+
+query {
+  type: info
+  keyword: 
+}

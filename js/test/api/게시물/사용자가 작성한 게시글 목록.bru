@@ -1,0 +1,16 @@
+meta {
+  name: 사용자가 작성한 게시글 목록
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{URL}}/posts/users/{_id}?_id&type={{name}}
+  body: none
+  auth: none
+}
+
+query {
+  _id: 
+  type: {{name}}
+}

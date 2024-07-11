@@ -1,0 +1,15 @@
+meta {
+  name: 파일업로드
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/files/
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  attach: @file(/Users/aaaa/Downloads/IMG_6508.PNG)
+}
